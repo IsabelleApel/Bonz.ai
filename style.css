@@ -1,0 +1,532 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --green:#4E6E5D;
+    --beige:#EDC79B;
+    --aqua: #54EABD;
+}
+
+h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* header */
+
+.header{
+    background-color: var(--green);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header__logo{
+    width: 4rem;
+    margin-left: 1rem;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    list-style-type: none;
+    padding-right: 3rem;
+    color: #fff;
+}
+
+.header__list-item{
+    padding: 1rem;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__hamburger-menu{
+    color: #fff;
+    padding-right: 2rem;
+}
+
+.header__hamburger-menu:hover{
+    cursor: pointer;
+}
+
+/* hero */
+
+.hero{
+    position: relative;
+    color: white;
+}
+
+.hero__image{
+    width: 100%;
+    object-fit: cover;
+    max-height: 60vh;
+    object-position: 100% 100%;
+}
+
+.hero__heading{
+    position: absolute;
+    bottom: 550%;
+    left: 10%;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* main page */
+
+.information__card{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+.information__heading{
+    font-weight: normal;
+    font-size: 2.1rem;
+}
+
+.information__breadtext{
+    font-weight: lighter;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.information__photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.information__image{
+    max-width: 50%;
+}
+
+.information__image--desktop{
+    display: none;
+}
+
+.room-section{
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.room-section__text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+.room-section__heading{
+    font-size: 2.1;
+    font-weight: normal;
+}
+
+.room-section__link{
+    text-decoration: none;
+    color: #000;
+}
+
+.room__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.room__card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.room__image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.room__heading{
+    font-size: 1.6;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.room__info{
+    font-weight: lighter;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.room__more-info{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.room__link{
+    text-decoration: none;
+    color: #000;
+}
+
+/* about us page */
+
+.our-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.our-history__heading{
+    font-weight: normal;
+    font-size: 2.1rem;
+}
+
+.our-history__text{
+    font-weight: lighter;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 2rem;
+    overflow-x: auto;
+    gap: 0.5rem;
+}
+
+.photo-gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.photo-gallery__photo{
+    width: 200px;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    background-color: var(--beige);
+}
+
+.info-section--reverse{
+    background-color: #fff;
+}
+
+
+.info-section__photo-container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; 
+}
+
+.info-section__photo{
+    width: 50%;
+    height: auto;
+}
+
+.info-section__text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.info-section__heading{
+    text-align: left;
+}
+
+.info-section__text{
+    font-weight: lighter;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.info-section:last-child{
+    margin-bottom: 2rem;
+}
+
+/* booking page */
+
+.search-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 5px;
+    align-items: center;
+    background-color: var(--beige);
+}
+
+.search-form__heading{
+    padding: 1rem;
+}
+
+.search-form__forms{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.search-form__input-container{
+    width: 40%;
+    padding: 0.5rem 0;
+}
+
+
+.search-form__input{
+    height: 2rem;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    line-height: 1.6;
+}
+
+.search-form__submit{
+    margin: 2rem 0 1rem;
+}
+
+
+.booking{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.booking__card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--beige);
+    border-radius: 5px;
+}
+
+.booking__text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.booking__heading{
+    font-weight: 600;
+    padding: 1.5rem 1rem 1rem;
+}
+
+.booking__text{
+    font-weight: lighter;
+    line-height: 1.6;
+    padding: 0 1rem 1rem;
+}
+
+.booking__list{
+    column-count: 2;
+    padding: 0 1rem 2rem 2rem;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.booking__submit, .information__button, .search-form__submit{
+    min-width: 8rem;
+    padding: 1rem;
+    background-color: var(--aqua);
+    align-self: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--green);
+}
+
+.booking__submit{
+    margin-bottom: 1rem;
+}
+
+.booking__submit:hover{
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--green);
+    text-align: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.footer__address{
+    line-height: 1.6;
+}
+
+.footer__list{
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__social-media-icon{
+    padding: 1rem;
+}
+
+@media (min-width: 577px) {
+    .room-section{
+        background-color: black;
+    }    
+}
+
+@media (min-width: 1000px){
+    .header__nav{
+        display: block;
+    }
+
+    .header__hamburger-menu{
+        display: none;
+    }
+
+    .information__card{
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+    .information__image{
+        width: 24%;
+    }
+
+    .information__image--desktop{
+        display: block;
+    }
+
+    .information__breadtext{
+        text-align: center;
+    }
+
+    .room-section{
+        background-color: var(--beige);
+    }    
+
+    .room__container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .our-history__text{
+        text-align: center;
+    }
+
+    .photo-gallery__photo{
+        width: 300px;
+    }
+
+    .info-section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .info-section__photo-container{
+        width: 40%;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .info-section__photo{
+        width: 60%;
+    }
+    
+    .info-section__photo--right{
+        align-self: flex-end;
+    }
+    
+    .info-section__text-container{
+        width: 60%;
+    }
+    
+    .info-section--reverse{
+        flex-direction: row-reverse;
+    }
+
+    .booking{
+        margin: 2rem;
+        gap: 2rem;
+    }
+
+    .booking__card{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .booking__image{
+        width: 50%;
+    }
+
+    .booking__text-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer__social-media{
+        align-self: center;
+    }
+}

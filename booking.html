@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/66c35448fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Booking</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="assets/logo/bonz.ai-logo-white-portrait-full.png" class="header__logo" alt="bonz.ai logo"></a> 
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__list-item">
+                    <a href="booking.html" class="header__link">Boka boende</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__link">Upplevelser</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__link">Faciliteter</a>
+                </li> 
+                <li class="header__list-item">
+                    <a href="about.html" class="header__link">Om oss</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__link">Kontakt</a>
+                </li> 
+            </ul> 
+        </nav>  
+        <i class="header__hamburger-menu fa-solid fa-bars fa-2x"></i>
+    </header>
+
+    <hero class="hero">
+        <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="hero__image" alt="Photo by Luca Bravo, house by water">
+        <h1 class="hero__heading">"Eco-luxury reimagined: <br>
+            AI-driven comfort with a sustainable touch."</h1>
+    </hero> 
+
+    <main>
+        <article class="search-form">
+            <h2 class="search-form__heading">Search and Book Room</h2>
+            <form action="#" class="search-form__forms">
+                <div class="search-form__input-container">
+                    <label for="chack-in-date" class="search-form__label">Arrival Date</label><br>
+                    <input type="text" placeholder="2024-12-06" onfocus="(this.type='date')" onblur="(this.type='text')" id="check-in-date" name="check-in-date" min="2024-12-06" max="2025-12-31" class="search-form__input"><br>
+                </div>
+                <div class="search-form__input-container">
+                    <label for="chack-out-date" class="search-form__label">Departure Date</label><br>
+                    <input type="text" placeholder="2024-12-08" onfocus="(this.type='date')" onblur="(this.type='text')" id="check-out-date" name="check-out-date" min="2024-12-07" max="2025-12-31" class="search-form__input"><br>
+                </div>
+                <div class="search-form__input-container">
+                    <label for="guests" class="search-form__label">Guests</label><br>
+                    <input type="number" placeholder="2 guests" id="guests" name="guests" class="search-form__input"><br>
+                </div>
+                <div class="search-form__input-container">
+                    <label for="rooms" class="search-form__label">Rooms</label><br>
+                    <input type="number" placeholder="1 room" id="rooms" name="rooms" class="search-form__input"><br>
+                </div>
+                <input type="submit" class="search-form__submit" value="Search Rooms">
+        </article>
+        <section class="booking">
+            <article class="booking__card">
+                <img src="assets/photos/01-day.jpg" class="booking__image" alt="">
+                <div class="booking__text-container">
+                    <h2 class="booking__heading">Eco-Smart Room</h2>
+                    <p class="booking__text">
+                        A cozy retreat blending eco-friendly materials with essential smart technology 
+                        for a comfortable stay. Enjoy natural aesthetics and sustainable amenities 
+                        designed to minimize your environmental impact. Perfect for eco-conscious 
+                        travelers seeking affordability without compromising quality.
+                    </p>
+                    <ul class="booking__list">
+                        <li>Bamboo flooring</li>
+                        <li>Smart thermostat</li>
+                        <li>LED lighting</li>
+                        <li>Water-saving shower</li>
+                        <li>Organic linens</li>
+                        <li>High-speed Wi-Fi</li>
+                    </ul>
+                    <input type="submit" class="booking__submit" value="Choose Room">
+                </div>
+            </article>
+            <article class="booking__card">
+                <img src="assets/photos/01-day.jpg" class="booking__image" alt="">
+                <div class="booking__text-container">
+                    <h2 class="booking__heading">Eco-Smart Suite</h2>
+                    <p class="booking__text">
+                        Indulge in this spacious suite combining luxury, sustainability, 
+                        and advanced technology. Featuring enhanced comfort and thoughtful design, 
+                        it’s ideal for travelers wanting a touch of indulgence. 
+                        This suite offers expansive views, premium amenities, 
+                        and intuitive smart features.
+                    </p>
+                    <ul class="booking__list">
+                        <li>Reclaimed wood accents</li>
+                        <li>Smart lighting and blinds</li>    
+                        <li>Energy-efficient windows</li>
+                        <li>Organic memory foam mattress</li>
+                        <li>Air-purification system</li>
+                        <li>Integrated sound system</li>
+                        <li>Biodegradable toiletries</li>
+                    </ul>
+                    <input type="submit" class="booking__submit" value="Choose Room">
+                </div>
+            </article>
+            <article class="booking__card">
+                <img src="assets/photos/01-day.jpg" class="booking__image" alt="">
+                <div class="booking__text-container">
+                    <h2 class="booking__heading">Eco-Luxe Penthouse</h2>
+                    <p class="booking__text">
+                        Immerse yourself in ultimate eco-luxury with this penthouse featuring 
+                        cutting-edge green technology and exquisite design. 
+                        This exclusive space offers panoramic views, opulent furnishings, 
+                        and personalized smart controls, perfect for a high-end, sustainable experience.
+                    </p>
+                    <ul class="booking__list">
+                        <li>Private terrace</li>  
+                        <li>Solar-powered energy</li>    
+                        <li>Advanced water-recycling system</li>
+                        <li>Voice-controlled room settings</li>
+                        <li>Eco-luxe bath with spa features</li>
+                        <li>Smart entertainment hub</li>
+                        <li>Designer organic furnishings</li>
+                    </ul>
+                    <input type="submit" class="booking__submit" value="Choose Room">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <address class="footer__address">
+            Hotelvägen 9 <br>
+            123 45 Hotel <br>
+            Stora Staden <br>
+        </address>
+        <ul class="footer__list">
+            <li class="footer__list-item"><a href="#" class="footer__link">Legal Stuff</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Security</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Website accessability</a></li>
+        </ul>
+        <figure class="footer__social-media">
+            <a class="footer__social-media-icon fa-brands fa-facebook fa-lg"></a>
+            <a class="footer__social-media-icon fa-brands fa-tiktok fa-lg"></a>
+            <a class="footer__social-media-icon fa-brands fa-instagram fa-lg"></a>
+        </figure>
+    </footer>
+</body>
+</html>
