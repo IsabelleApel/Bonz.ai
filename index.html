@@ -13,23 +13,32 @@
         <nav class="header__nav">
             <ul class="header__menu">
                 <li class="header__list-item">
-                    <a href="booking.html" class="header__link">Boka boende</a>
+                    <a href="booking.html" class="header__link">Book now</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">Upplevelser</a>
+                    <a href="#" class="header__link">Activities</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">Faciliteter</a>
+                    <a href="#" class="header__link">Retreats</a>
                 </li> 
                 <li class="header__list-item">
-                    <a href="about.html" class="header__link">Om oss</a>
+                    <a href="about.html" class="header__link">About us</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">Kontakt</a>
+                    <a href="#" class="header__link">Contact</a>
                 </li> 
             </ul> 
-        </nav>  
-        <i class="header__hamburger-menu fa-solid fa-bars fa-2x"></i>
+        </nav> 
+        <div class="hamburger-menu">
+            <a class="hamburger-menu__dropdown fa-solid fa-bars fa-2x"></a>
+            <div class="hamburger-menu__dropdown-content">
+                <a href="booking.html" class="hamburger-menu__link">Book now</a>
+                <a href="#" class="hamburger-menu__link">Activities</a>
+                <a href="#" class="hamburger-menu__link">Retreats</a>
+                <a href="about.html" class="hamburger-menu__link">About us</a>
+                <a href="#" class="hamburger-menu__link">Contact</a>
+            </div>
+        </div> 
     </header>
 
     <hero class="hero">
@@ -37,7 +46,7 @@
         <h1 class="hero__heading">"Eco-luxury reimagined: <br>
             AI-driven comfort with a sustainable touch."</h1>
     </hero> 
-    <main class="homepage">
+    <main class="main-homepage">
         <article class="information__card">
             <h2 class="information__heading">Lorem ipsum</h2>
             <p class="information__breadtext">
@@ -48,10 +57,10 @@
                 ab molestiae nisi est dolorem explicabo? 
             </p>
             <section class="information__photos">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="Photo by Luca Bravo, house by water">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="Photo by Luca Bravo, house by water">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="Photo by Luca Bravo, house by water">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="Photo by Luca Bravo, house by water">
             </section>
             <p class="information__breadtext">
                 Quibusdam placeat, voluptatem officia voluptas temporibus veniam ipsam saepe accusantium deserunt aspernatur!
@@ -59,13 +68,10 @@
                 necessitatibus iste, rem enim magnam exercitationem? Pariatur animi ex, blanditiis eius id ipsam, 
                 fugiat obcaecati omnis, mollitia repellat tempore!
             </p>
-            <button class="information__button">Book Now!</button>
+            <a href="booking.html"><button class="button">Book Now!</button></a>
         </article>
         <article class="room-section">
-            <div class="room-section__text-container">
                 <h2 class="room-section__heading">Our Rooms</h2>
-                <a href="#" class="room-section__link">Show All</a>
-            </div>
             <section class="room__container">
                 <section class="room__card">
                     <img src="assets/photos/08-day.jpg" class="room__image" alt="hotelroom">
@@ -131,10 +137,10 @@
                 fugiat obcaecati omnis, mollitia repellat tempore!
             </p>
             <section class="information__photos">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="">
-                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="Photo by Luca Bravo, house by water">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image" alt="Photo by Luca Bravo, house by water">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="Photo by Luca Bravo, house by water">
+                <img src="assets/photos/luca-bravo-zAjdgNXsMeg-unsplash.jpg" class="information__image information__image--desktop" alt="Photo by Luca Bravo, house by water">
             </section>
             <p class="information__breadtext">
                 Cupiditate, natus dolores corrupti esse ullam excepturi, incidunt nihil similique eligendi 
@@ -144,7 +150,7 @@
                 fugit excepturi incidunt corrupti exercitationem tempora doloremque, rem ullam? 
                 Magni aspernatur error ad magnam harum voluptatem iusto?
             </p>
-            <button class="information__button">Mer om oss</button>
+            <a href="about.html"><button class="button">Our Story</button></a>
             <img src="" alt="">
         </article>
     </main>
@@ -161,9 +167,9 @@
             <li class="footer__list-item"><a href="#" class="footer__link">Website accessability</a></li>
         </ul>
         <figure class="footer__social-media">
-            <a class="footer__social-media-icon fa-brands fa-facebook fa-lg"></a>
-            <a class="footer__social-media-icon fa-brands fa-tiktok fa-lg"></a>
-            <a class="footer__social-media-icon fa-brands fa-instagram fa-lg"></a>
+            <a href="#" class="footer__social-media-icon fa-brands fa-facebook fa-lg"></a>
+            <a href="#" class="footer__social-media-icon fa-brands fa-tiktok fa-lg"></a>
+            <a href="#" class="footer__social-media-icon fa-brands fa-instagram fa-lg"></a>
         </figure>
     </footer>
 </body>

@@ -13,23 +13,32 @@
         <nav class="header__nav">
             <ul class="header__menu">
                 <li class="header__list-item">
-                    <a href="booking.html" class="header__link">Boka boende</a>
+                    <a href="booking.html" class="header__link">Book now</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">Upplevelser</a>
+                    <a href="#" class="header__link">Activities</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">Faciliteter</a>
+                    <a href="#" class="header__link">Retreats</a>
                 </li> 
                 <li class="header__list-item">
-                    <a href="about.html" class="header__link">Om oss</a>
+                    <a href="about.html" class="header__link">About us</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">Kontakt</a>
+                    <a href="#" class="header__link">Contact</a>
                 </li> 
             </ul> 
         </nav>  
-        <i class="header__hamburger-menu fa-solid fa-bars fa-2x"></i>
+        <div class="hamburger-menu">
+            <a class="hamburger-menu__dropdown fa-solid fa-bars fa-2x"></a>
+            <div class="hamburger-menu__dropdown-content">
+                <a href="booking.html" class="hamburger-menu__link">Book now</a>
+                <a href="#" class="hamburger-menu__link">Activities</a>
+                <a href="#" class="hamburger-menu__link">Retreats</a>
+                <a href="about.html" class="hamburger-menu__link">About us</a>
+                <a href="#" class="hamburger-menu__link">Contact</a>
+            </div>
+        </div> 
     </header>
 
     <hero class="hero">
@@ -38,7 +47,7 @@
             AI-driven comfort with a sustainable touch."</h1>
     </hero> 
 
-    <main>
+    <main class="main-booking">
         <article class="search-form">
             <h2 class="search-form__heading">Search and Book Room</h2>
             <form action="#" class="search-form__forms">
@@ -58,11 +67,11 @@
                     <label for="rooms" class="search-form__label">Rooms</label><br>
                     <input type="number" placeholder="1 room" id="rooms" name="rooms" class="search-form__input"><br>
                 </div>
-                <input type="submit" class="search-form__submit" value="Search Rooms">
+                <input type="submit" class="button button--margin" value="Search Rooms">
         </article>
         <section class="booking">
             <article class="booking__card">
-                <img src="assets/photos/01-day.jpg" class="booking__image" alt="">
+                <img src="assets/photos/01-day.jpg" class="booking__image" alt="hotelroom">
                 <div class="booking__text-container">
                     <h2 class="booking__heading">Eco-Smart Room</h2>
                     <p class="booking__text">
@@ -79,11 +88,11 @@
                         <li>Organic linens</li>
                         <li>High-speed Wi-Fi</li>
                     </ul>
-                    <input type="submit" class="booking__submit" value="Choose Room">
+                    <input type="submit" class="button button--margin-bottom" value="Choose Room">
                 </div>
             </article>
             <article class="booking__card">
-                <img src="assets/photos/01-day.jpg" class="booking__image" alt="">
+                <img src="assets/photos/01-day.jpg" class="booking__image" alt="hotelroom">
                 <div class="booking__text-container">
                     <h2 class="booking__heading">Eco-Smart Suite</h2>
                     <p class="booking__text">
@@ -102,11 +111,11 @@
                         <li>Integrated sound system</li>
                         <li>Biodegradable toiletries</li>
                     </ul>
-                    <input type="submit" class="booking__submit" value="Choose Room">
+                    <input type="submit" class="button button--margin-bottom" value="Choose Room">
                 </div>
             </article>
             <article class="booking__card">
-                <img src="assets/photos/01-day.jpg" class="booking__image" alt="">
+                <img src="assets/photos/01-day.jpg" class="booking__image" alt="hotelroom">
                 <div class="booking__text-container">
                     <h2 class="booking__heading">Eco-Luxe Penthouse</h2>
                     <p class="booking__text">
@@ -124,7 +133,7 @@
                         <li>Smart entertainment hub</li>
                         <li>Designer organic furnishings</li>
                     </ul>
-                    <input type="submit" class="booking__submit" value="Choose Room">
+                    <input type="submit" class="button button--margin-bottom" value="Choose Room">
                 </div>
             </article>
         </section>
@@ -143,9 +152,9 @@
             <li class="footer__list-item"><a href="#" class="footer__link">Website accessability</a></li>
         </ul>
         <figure class="footer__social-media">
-            <a class="footer__social-media-icon fa-brands fa-facebook fa-lg"></a>
-            <a class="footer__social-media-icon fa-brands fa-tiktok fa-lg"></a>
-            <a class="footer__social-media-icon fa-brands fa-instagram fa-lg"></a>
+            <a href="#" class="footer__social-media-icon fa-brands fa-facebook fa-lg"></a>
+            <a href="#" class="footer__social-media-icon fa-brands fa-tiktok fa-lg"></a>
+            <a href="#" class="footer__social-media-icon fa-brands fa-instagram fa-lg"></a>
         </figure>
     </footer>
 </body>
